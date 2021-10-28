@@ -18,8 +18,9 @@ section {
 }
 
 .container {
-    width: 90%;
-    max-width: 390px;
+    width: 100%;
+    padding-left: 15px;
+    max-width: 400px;
     height: 700px;
     background-color: rgb(0, 0, 0);
     border-radius: 40px;
@@ -58,9 +59,9 @@ section {
 } */
 
 .all_button {
-    display: grid;
-    padding-left: 15px;
-    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .all-clear {
@@ -84,6 +85,7 @@ section {
 }
 
 .button {
+    margin-right: 15px;
     height: 80px;
     width: 80px;
     border-radius: 40px;
@@ -100,6 +102,6 @@ section {
 }
 
 .btn-0 {
-    grid-area: 5/1/6/3;
-    background-color: rgb(73, 73, 73);
+    width: 175px;
+    padding-right: 90px;
 }

@@ -47,8 +47,8 @@ function clearVar(name = '') {
     display1El.innerText = dis1Num;
     display2El.innerText = '';
     dis2Num = '';
-    // tempResultEl.innerText = result;
 }
+// 50.deydi tempResultEl.innerText = result;
 
 function mathOperation() {
     if (lastOperation === 'x') {
@@ -66,15 +66,15 @@ function mathOperation() {
 // operation();
 
 equalEl.addEventListener('click', () => {
-    if (!dis2Num || !dis1Num) return;
-    haveDot = false;
-    mathOperation();
-    clearVar();
-    display2El.innerText = result;
-    // tempResultEl.innerText = '';
-    dis2Num = result;
-    dis1Num = '';
-})
+        if (!dis2Num || !dis1Num) return;
+        haveDot = false;
+        mathOperation();
+        clearVar();
+        display2El.innerText = result;
+        dis2Num = result;
+        dis1Num = '';
+    })
+    // 74.deydi tempResultEl.innerText = '';
 
 clearAllEl.addEventListener('click', () => {
     dis1Num = '';
@@ -82,8 +82,8 @@ clearAllEl.addEventListener('click', () => {
     display1El.innerText = '';
     display2El.innerText = '';
     result = '';
-    // tempResultEl.innerText = '';
 });
+// 85.deydi tempResultEl.innerText = '';
 
 clearLastEl.addEventListener('click', () => {
     display2El.innerText = display2El.innerText.toString().slice(0, -1);
