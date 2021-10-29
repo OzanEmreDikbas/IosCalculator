@@ -48,7 +48,7 @@ function clearVar(name = '') {
     display2El.innerText = '';
     dis2Num = '';
 }
-// 50.deydi tempResultEl.innerText = result;
+// 50. tempResultEl.innerText = result;
 
 function mathOperation() {
     if (lastOperation === 'x') {
@@ -74,7 +74,7 @@ equalEl.addEventListener('click', () => {
         dis2Num = result;
         dis1Num = '';
     })
-    // 74.deydi tempResultEl.innerText = '';
+    // 74. tempResultEl.innerText = '';
 
 clearAllEl.addEventListener('click', () => {
     dis1Num = '';
@@ -83,7 +83,7 @@ clearAllEl.addEventListener('click', () => {
     display2El.innerText = '';
     result = '';
 });
-// 85.deydi tempResultEl.innerText = '';
+// 85. tempResultEl.innerText = '';
 
 clearLastEl.addEventListener('click', () => {
     display2El.innerText = display2El.innerText.toString().slice(0, -1);
